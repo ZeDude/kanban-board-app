@@ -8,7 +8,7 @@ import { AddOutline } from 'react-ionicons';
 import AddModal from '../../components/Modals/AddModal';
 import Task from '../../components/Task';
 
-const Home = () => {
+const Kanban = () => {
   const [columns, setColumns] = useState<Columns>(Board);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedColumn, setSelectedColumn] = useState('');
@@ -29,6 +29,7 @@ const Home = () => {
 
   return (
     <>
+      {/* <div className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500"> */}
       <DragDropContext
         onDragEnd={(result: any) => onDragEnd(result, columns, setColumns)}
       >
@@ -83,6 +84,7 @@ const Home = () => {
           ))}
         </div>
       </DragDropContext>
+      {/* </div> */}
 
       <AddModal
         isOpen={modalOpen}
@@ -94,4 +96,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Kanban;

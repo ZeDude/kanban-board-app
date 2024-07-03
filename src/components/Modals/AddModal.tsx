@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import { getRandomColors } from '../../helpers/getRandomColors';
 import { v4 as uuidv4 } from 'uuid';
-import { Button } from '@headlessui/react';
+import { Button } from 'react-daisyui';
+// import { Button } from '@headlessui/react';
 
 interface Tag {
   title: string;
